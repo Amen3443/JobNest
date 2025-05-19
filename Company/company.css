@@ -1,0 +1,234 @@
+
+
+.main{
+    padding-top: 4%;
+    margin-bottom: 113;
+}
+h1 {
+    font-size: 2em;
+    text-align: center;
+    color:#77ccb7;
+}
+
+.buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+    padding: 20px; /* Added padding */
+    background-color:#ccc; /* Added background color */
+    border-radius: 4px; /* Optional: add border radius for rounded corners */
+    margin-bottom: 60;
+}
+
+.sizes {
+    font-size: 1.3em;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px; /* Added border radius */
+    background-color:#ccc;
+    transition: background-color 0.3s, color 0.3s;
+    color: white;
+}
+
+.sizes:hover {
+    background-color:#b3a9a9;
+    color: white;
+}
+
+
+
+.pagination {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    justify-content: center;
+    gap: 5px;
+}
+
+/* .pagination li {
+    margin: 0 5px;
+}
+
+.pagination a, .pagination span {
+    text-decoration: none;
+    color: #000;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+} */
+
+/* .pagination a:hover {
+    background-color: #f0f0f0;
+}
+
+.pagination a.active {
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #007bff;
+} */
+
+/* .pagination .hidden {
+    display: none;
+}
+
+.pagination .dots {
+    border: none;
+    background: none;
+    padding: 8px 12px;
+    pointer-events: none; /* Disable interaction 
+} */
+
+.hidden {
+    display: none;
+}
+
+/* Flexbox styles for companies container */
+.companies-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+.company-container {
+    border: 3px solid #7b7b7b;
+    border-style:dashed;
+    padding: 15px;
+    text-align: left;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex: 1 1 calc(50% - 40px); /* Two columns on PC/tablet */
+    max-width: calc(50% - 40px); /* Max width for columns */
+    box-sizing: border-box;
+    background-color: rgb(252, 248, 248);
+    color: #6e6969;
+    transition-delay: 2s;
+    transition-duration: 2s;
+    /* opacity: 0; */
+    transform: rotateX(-10deg);
+    transition-delay: 2s;
+}
+.companies-container.active{
+  opacity: 1;
+  transform: rotateX(0);
+  transition-delay: 2s;
+}
+
+.company-logo {
+    max-width: 80px;
+    width: 100px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.company-details {
+    margin-left: 20px;
+}
+
+.company-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #269ccc;
+}
+#avjobs{
+  width: 60;
+  height: 30;
+  margin-left: 680;
+  background-color:#269ccc;
+  width: 95;
+  height: 40;
+  color: white;
+  font-size: 18;
+  border: none;
+  border-radius: 4px;
+}
+#avjobs:hover{
+  background-color:#1ba8e0;
+}
+
+
+@media (max-width: 1200px) {
+ #avjobs
+ {
+    margin-left: 500;
+}
+.sizes {
+font-size: 1.3em;
+padding: 8px 16px;
+}
+.main{
+    padding-top: 8%;
+    margin-bottom: 113;
+}
+}
+
+@media (max-width: 992px) {
+.sizes {
+font-size: 1.2em;
+padding: 6px 14px;
+}
+#avjobs
+{
+   margin-left: 300;
+}
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+    .company-container {
+        flex: 1 1 100%; /* One column on mobile */
+        max-width: 100%;
+    }
+
+    .sizes {
+        font-size: 1.2em;
+        padding: 6px 14px;
+    }
+    .main{
+        padding-top: 10%;
+        margin-bottom: 113;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 576px) {
+    .sizes {
+        font-size: 0.9em;
+        padding: 5px 10px;
+    }
+    #avjobs
+{
+   margin-left: 250;
+}
+
+    h1 {
+        font-size: 1.6em;
+    }
+    .main{
+        padding-top: 13%;
+        margin-bottom: 113;
+    }
+}
+
+@media (max-width: 480px) {
+    .sizes {
+        font-size: 0.8em;
+        padding: 4px 8px;
+    }
+  
+    h1 {
+        font-size: 1.4em;
+    }
+}
+

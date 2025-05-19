@@ -1,0 +1,211 @@
+/* * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(to right, #3a7bd5, #3a6073);
+    font-family: sans-serif;
+    height: 100vh; */
+/* } */
+/* .center{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+} 
+.center button {
+    padding:10px 20px;
+    font-size:15px;
+    font-weight:600;
+    color: #222;
+    background: #f5f5f5;
+    border: none;
+    outline: none;
+   cursor: pointer;
+   border-radius: 5px;
+} */
+
+.container.active  {
+  filter: blur(10px);
+  pointer-events: none;
+  user-select: none;
+}
+.popup{
+    position: fixed;
+    top:-150%;
+    left:50%;
+    opacity:0;
+    transform:translate(-50%,-50%) scale(1.25); 
+    width:380px;
+    padding:20px 30px;
+    background:#fff;
+    box-shadow:2px 2px 5px 5px rgba(0,0,0,0.15); 
+    border-radius:10px;
+    transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 200ms ease-in-out 0ms;
+                 padding: 10px 10px;
+ 
+    color: #6e6969;
+    background-color:rgb(243, 243, 243) ;
+    height: 360;
+   
+}               
+.popup1 {
+  position: fixed;
+  top:-150%;
+  left:50%;
+  opacity:0;
+  transform:translate(-50%,-50%) scale(1.25); 
+  width:380px;
+  padding:20px 30px;
+  background:#fff;
+  box-shadow:2px 2px 5px 5px rgba(0,0,0,0.15); 
+  border-radius:10px;
+  transition: top 0ms ease-in-out 200ms,
+              opacity 200ms ease-in-out 0ms,
+              transform 200ms ease-in-out 0ms;
+               padding: 10px 10px;
+
+  color: #6e6969;
+  background-color:rgb(243, 243, 243) ;
+  height: 360;
+ 
+}                           
+.popup.active {
+    top: 50%;
+    opacity: 1;
+    transform:translate(-50%,-50%) scale(1);
+    transition:top 0ms ease-in-out 0ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 200ms ease-in-out 0ms; 
+}
+
+.popup1.active {
+  top: 50%;
+  opacity: 1;
+  transform:translate(-50%,-50%) scale(1);
+  transition:top 0ms ease-in-out 0ms,
+              opacity 200ms ease-in-out 0ms,
+              transform 200ms ease-in-out 0ms; ;
+}
+
+
+
+.popup .close-btn,.popup1 .close-btn {
+    position:absolute;
+    top:10px;
+    right:10px;
+    width:15px;
+    height:15px;
+    background-color: #1ba8e0;
+    color:#eee;
+    text-align:center;
+    line-height:15px;
+    border-radius:15px;
+    cursor:pointer;
+}
+.popup .form h2,.popup1 .form h2 {
+    text-align:center;
+    color:#269ccc;
+    margin: 10px 0px 0px;
+
+    font-size: 28;
+}
+.popup .form .form-element,.popup1 .form .form-element {
+    margin:15px 0px;
+}
+.popup .form .form-element label,.popup1 .form .form-element label {
+    font-size: 16px;
+    color: #6e6969;
+    
+}
+.popup .form .form-element input[type="text"],
+.popup .form .form-element input[type="password"],
+.popup1 .form .form-element input[type="text"],
+.popup1 .form .form-element input[type="password"]{
+    margin-top:5px;
+    display:block;
+    width: 100%;
+    padding:10px;
+    outline:none;
+    border: 1px solid #aaa;
+    border-radius:4px;
+    color: #6e6969;
+    margin-bottom: 20;
+}
+.popup .form .form-element input[type="checkbox"],.popup1 .form .form-element input[type="checkbox"] {
+    margin-right:5px;
+}
+.popup .form .form-element button,.popup1 .form .form-element button {
+    width:100%;
+    height:40px;
+    border:none;
+    outline:none;
+    font-size:16px;
+    background:#269ccc;
+    color:white;
+    border-radius:4px;
+    cursor: pointer;
+    margin-top: 50;
+    font-size: 18;
+}
+/* .popup .form .form-element a {
+    display: block;
+    text-align: right;
+    font-size: 15px;
+    color: #1a79ca;
+    text-decoration: none;
+    font-weight: 600;
+
+} */
+
+
+.loginpopup{
+    position: fixed;
+    top: 35%;
+    left: 45%;
+    border: 3px solid black ;
+    width: 350;
+    padding: 10px 10px;
+    /* transform: translate(-50%,-50%); */
+    color: #6e6969;
+    background-color:rgb(243, 243, 243) ;
+    height: 320;
+  }
+  .loginpopup h2{
+  color: #269ccc;
+  margin-left: 120;
+  margin-bottom: 25;
+  font-size: 28;
+  }
+  .loginpopup label {
+    margin-top: 100;
+    font-size: 18px;
+  }
+  .loginpopup input{
+    width: 320;
+    height: 30;
+    font-size: 18px;
+    margin-bottom: 10;
+  }
+  .popup a{
+    color: #1ba8e0;
+    text-decoration: none;
+  }
+  .loginpopup button{
+    margin-top: 70;
+    width: 350;
+    height: 30;
+    font-size: 18;
+    background-color: #269ccc;
+    color: white;
+  }
+  .popup .form-element button:hover, .popup1 .form-element button:hover{
+    background-color: #1ba8e0;
+  }
+  
+  
+  
+  

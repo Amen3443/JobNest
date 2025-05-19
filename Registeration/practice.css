@@ -1,0 +1,519 @@
+/* body{
+    background-image: url(whiteBackground.jpg);
+    background-size: cover;
+    background-position: center;
+    image-rendering: 90%;
+} */
+
+.mainPage div .Step1,.Step2,.Step3{
+    box-sizing:content-box;
+    text-align: center;
+    
+    height:500px;
+    width: 90%;
+    padding: 5px 10px;
+    display: flex;
+    /* flex-direction: row; */
+    margin: 1px 4%;
+    justify-content: space-around;
+
+    border-radius: 50px;
+    background-color: lightgray;
+    border: 1px solid grey;
+    border-top: 10px grey;
+    border-bottom: 10px grey;
+    border-left: 10px grey;
+    border-right: 10px grey;
+    box-shadow: 4px 4px 8px #68595a;
+}
+.status,.status1{
+    width: 100%; 
+    padding-top: 20;
+    padding-bottom: 10;
+    padding-left: 840;
+    padding-right: 715;
+}
+.status1{
+    padding-right: 747; 
+}
+.Step2{
+
+    height: 250px;
+}
+.title{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    margin: 20px 30%;
+    background-color: #269ccc; 
+    height: 30px;
+    width: 40%;
+    border-radius: 20px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+main h2{
+    margin: 20px;
+    font-size: 35px;
+    width: 300px;
+}
+main h4{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 30px;
+    font-size: 20px;
+}
+
+.mainPage div .userDetails{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-between; 
+     border-radius: 50px;
+    padding: 20px ;
+     width: 90%;
+      margin: 5px 50px;
+      height: 450px;
+}
+
+
+
+.Step2{
+
+    height: 250px;
+}
+.Step2 div .userDetails{
+    height:210px;
+    padding: 15px;
+}
+
+
+.Step3{
+
+    height: 450px;
+}
+.Step3 div .userDetails{
+    height:420px;
+    padding: 10px;
+}
+
+
+
+#nationality{
+    background-image: url(et.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 10px;
+
+}
+
+
+
+div a{
+    color:#18b0ec;
+}
+
+.userDetails .inputBox{   
+    width: 40%; 
+    margin: 5px;
+   
+    
+}
+
+.userDetails .inputBox .details{   
+    font-family: 'Roboto', 'Open Sans', sans-serif;
+    
+    color: black;
+    
+}
+
+.userDetails .inputBox label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.userDetails .inputBox input,select{
+    height: 30px;
+    width: 100%;
+    padding-left: 15px;
+    border-radius: 4px 4px;
+    border-color: solid grey;
+    font-family:Arial, Helvetica, sans-serif;
+    /* color: #7b7b7b; */
+
+    border: 10px solid grey;
+    border-top: 10px grey;
+    border-bottom: 10px grey;
+    border-left: 10px grey;
+    border-right: 10px grey;
+    box-shadow: 2px 2px 4px #68595a;
+}
+
+.userDetails .inputBox input{
+    display: block ;
+    
+}
+
+
+.userDetails .inputBox select{
+    
+    width: 105%;
+    
+}
+
+
+
+.message{
+    margin: 50px 0;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    
+}
+
+
+.mainPage div .nextButton{
+    
+ font-family:Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    max-width: 100px;
+    width: 100%;
+    background-color: #269ccc;
+    border-radius: 4px;
+    margin: 20px;
+    cursor: pointer;
+    color: wheat;
+    font-size: medium;
+    font-weight: bold;
+    border: 1px solid grey;
+    border-top: 10px grey;
+    border-bottom: 10px grey;
+    border-left: 10px grey;
+    border-right: 10px grey;
+    box-shadow: 4px 4px 8px #68595a;
+}
+
+ #first{
+    position: relative;
+    margin-top: 10px;
+    margin-left:100px;
+}
+
+ .nextButton:hover{
+    background-color: #18b0ec;
+}
+
+ #back1, #second{
+    margin:10px 100px;
+}
+
+ #second{
+    position: absolute;
+    top: 190px;
+    right:1px;
+}
+
+ #back1{
+    position: absolute;
+    top: 190px;
+    left:450px;
+}
+
+ #back2, #create{
+    margin:1px 110px;
+}
+
+ #back2{
+    
+    position: relative;
+    margin-top: -55px ;
+    margin-left: 100px;
+    /* right:100px; */
+}
+
+ #create{
+    position: relative;
+    margin-top: -35px ;
+    margin-left:65%;
+    max-width: 200px;
+
+}
+
+#defaultProfile{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+}
+.pro img{
+    margin-right: 46;
+    color: #269ccc;
+    width: 35;
+    border-radius: 50%;
+    background-color:#269ccc;   
+}
+
+#selectProfile{
+    display: block;
+    
+    width: 150px;
+    background: #5dbeff;
+    color: white;
+    padding: 12px;
+    margin: 12px auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#profile{
+    display: none;
+}
+
+
+
+.inputBox p{
+    font-size: 15px;
+    color: red;
+    visibility: hidden;
+    text-align: left;
+    padding-top: 3px;
+    padding-left: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+
+}/* 
+.inputBox.success input {
+    
+    border-radius: 15px 15px;
+    border-color: solid ;
+}
+
+.inputBox.error input {
+    
+    border-radius: 15px 15px;
+    border-color: solid #ff3860;
+}
+
+.inputBox .error {
+    
+    border-radius: 15px 15px;
+    color: solid#ff3860;
+    font-size: 90px;
+    height: 13px;
+}
+ */
+.inputBox.success input{
+    border: 3px solid #09c372;
+}
+.inputBox.error input{
+    border: 3px solid #ff3860;
+}
+.inputBox.error p{
+    visibility: visible;
+}
+
+
+
+
+/* Transition to steps */
+.mainPage .Step1,.Step2{
+    position: absolute;
+    transition: 0.3s ease;
+}
+
+.mainPage .Step2,.Step3{
+    opacity: 0;
+    pointer-events: none;
+    
+    transition: 0.3s ease;
+}
+
+body.secActive .Step2{
+    opacity: 1;
+    pointer-events: auto;
+    
+}
+
+body.secActive .Step1,.Step3{
+    opacity: 0;
+    pointer-events: none;
+    
+}
+
+body.secActive1 .Step3{
+    opacity: 1;
+    pointer-events: auto;
+    
+}
+
+body.secActive1 .Step2{
+    opacity: 0;
+    pointer-events: none;
+    
+}
+
+footer{
+    margin-top: 70px;
+}
+
+
+
+
+
+
+/* Tablet flex */
+@media only screen and (min-width: 320px) and (max-width: 990px){
+    
+    
+    .mainPage div .Step1,.Step2,.Step3{
+        display:flex; 
+         flex-direction: column;
+        /*   flex-wrap: wrap;
+         align-content: flex-start; */
+         
+        
+        height: 160%;
+         width: 100%; 
+       /* padding: 50px;
+         align-content: space-evenly;
+        margin: 2%;
+        */
+
+    opacity: 2px;
+    padding: 0px 20px;
+   
+    margin:1px 0px;
+    gap: 0; 
+
+    
+    }
+    
+
+    .title{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 40px;
+        
+    }
+    main h2{
+        margin: 10px;
+        font-size: 30px;
+        width: 100px;
+    }
+    main h4{
+        margin: 0px  ;
+        font-size: 20px;
+        padding-top: 0;
+    }
+
+
+    .mainPage div .userDetails{
+       
+        justify-content:left;
+        display: flex;
+        column-gap: 90%;
+         border-radius: 50px;
+        padding:0px 10px ;
+         width: 95%;
+          margin: 1px 20px;
+          height: 100%;
+    }
+
+    .userDetails .inputBox input,select{
+        height: 30px;
+        width: 180%;
+        padding-left: 35px;
+        border-radius: 4px 4px;
+    }
+    .userDetails .inputBox{   
+        width: 50%; 
+        margin: 5px;
+       
+        
+    }
+    
+.mainPage div .nextButton{
+    
+      display: flex;
+       align-items: left;
+       justify-content: center;
+       height: 35px;
+       max-width: 100px;
+       width: 100%;
+       background-color: #269ccc;
+       border-radius: 4px;
+       margin: 20px;
+       cursor: pointer;
+       color: wheat;
+       font-size: medium;
+       font-weight: bold;
+   }
+   .userDetails .inputBox select{
+    
+    width: 190%;
+    
+}
+.Step2{
+
+    height: 80%;
+}
+.Step2 form .userDetails{
+    height:90%;
+    padding: 2%;
+}
+
+div #second{
+    position: absolute;
+    top: 92%;
+    right:1px;
+}
+
+div #back1{
+    position: absolute;
+    top: 92%;
+    left:5%;
+}
+
+
+.Step3{
+
+    height:100%;
+}
+.Step3 form .userDetails{
+    height:80%;
+    padding: 10px;
+}
+div #back2{
+    
+    position: absolute;
+    top: 100% ;
+    left: 1%;
+    /* right:100px; */
+}
+
+div #create{
+    position: absolute;
+    top:100% ;
+    right:3%;
+    max-width: 200px;
+
+}
+div #selectProfile{
+    position: absolute;
+    top:55% ;
+    right:1%;
+}
+
+
+   footer{
+    margin-top: 80%;
+}
+}
