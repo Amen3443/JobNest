@@ -360,7 +360,7 @@ include "Companyfilter.php";
     <div class="popup1">
         <div class="close-btn">&times;</div>
         <div class="form">
-            <h2>Delete Account</h2>
+            <h2>Delete Accounts</h2>
             <form action="../Delete/Delete.php" method="Post">
             <div class="form-element">
                 <label for="Email">UserName</label>
