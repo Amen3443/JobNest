@@ -218,7 +218,7 @@ require_once "../Connection/Connection.php";
         <form action="../Login/Login.php" method="Post">
         <div class="form-element">
             <label for="Email">Email</label>
-            <input type="text" id="email" name="Email" placeholder="Enter Your Email" required >
+            <input type="text" id="email" name="Email" placeholder="Enter Email" required >
         </div>
         <div class="form-element">
             <label for="Password">Password</label>

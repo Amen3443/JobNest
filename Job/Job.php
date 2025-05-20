@@ -364,14 +364,14 @@ include "Companyfilter.php";
             <form action="../Delete/Delete.php" method="Post">
             <div class="form-element">
                 <label for="Email">UserName</label>
-                <input type="text" id="email" name="Email" placeholder="Enter Email" required >
+                <input type="text" id="email" name="Email" placeholder="Enter Your Email" required >
             </div>
             <div class="form-element">
                 <label for="Password">Password</label>
-                <input type="password" id="password" name="Password" placeholder="Enter Password" required>
+                <input type="password" id="password" name="Passwords" placeholder="Enter your Password" required>
             </div>
             <div class="form-element">
-                <button id="abebe">Delete Account</button>
+                <button id="abebes">Delete Account</button>
             </div>
             </form>
     </div>
