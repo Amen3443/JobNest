@@ -1,6 +1,6 @@
 const { expect } = require('@playwright/test');
 
-async function performLogin(browser) {
+async function performLogin(browser,name,password) {
 const context = await browser.newContext({ ignoreHTTPSErrors: true });
 const page = await context.newPage();
 
@@ -11,8 +11,8 @@ const page = await context.newPage();
 
   await page.click('#show-login1');
   await page.waitForSelector("input[placeholder='Enter Email']");
-  await page.getByPlaceholder("Enter Email").type("mesfin@gmail.com");
-  await page.locator("input[name='Password']").type("amen12345");
+  await page.getByPlaceholder("Enter Email").type(name);
+  await page.locator("input[name='Password']").type(password);
   await page.locator("#abebe").click();
 
   await expect(profileLink).toBeVisible();

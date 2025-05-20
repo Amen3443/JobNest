@@ -88,7 +88,7 @@ if ($_SERVER["REQUEST_METHOD"]=="POST")
             $_SESSION['location']=$location;
             $_SESSION['pp']=$newpic;
             $_SESSION['Status']='You have Successfully Updated Your Profile';
-            header("Location: profile.php");
+            header("Location: ../Profilepage/profile.php");
             exit();
 
             

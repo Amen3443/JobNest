@@ -19,8 +19,8 @@ test('Valid normal Login', async function validNormalLogin({browser}) {
   await page.waitForSelector("input[placeholder='Enter Email']");
 
   //Proceed with filling out the form
-  await page.getByPlaceholder("Enter Email").type("mesfin@gmail.com");
-  await page.locator("input[name='Password']").type("amen12345");
+  await page.getByPlaceholder("Enter Email").type("Mesfin@gmail.com");
+  await page.locator("input[name='Password']").type("Amen12345");
   await page.locator("#abebe").click();
 
   // Profile picture visable
@@ -34,7 +34,7 @@ test('Valid normal Login', async function validNormalLogin({browser}) {
  // npx playwright show-report - to see the report
  // npx playwright test ./tests/login.spec.js - to autmate the test
 // npx playwright test ./tests/login.spec.js --headed - same but with display
-
+//npx playwright codegen --viewport-size "1920, 1200"
 module.exports = { validNormalLogin };
 });
 

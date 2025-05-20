@@ -25,7 +25,7 @@ include "../Job/Jobfilters.php";
             <?php if (isset($_SESSION["Username"])) {
                 
             
-                echo '<a href="admin.php" class="pro"> <img src="propics/profile.png"></a>';
+                echo '<a href="admin.php" class="pro"> <img src="../propics/profile.png"></a>';
                 echo ' <a href="../Logout/logout.php" " class="logout">Log Out</a> ';
            
           } 

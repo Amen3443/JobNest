@@ -38,7 +38,11 @@ firstNextBtn.addEventListener('click',()=> {
                 count=0;
             } 
             else if (firstname.value.trim().length < 3 || firstname.value.trim().length > 15) {
-                setError(firstname, 'Provide a valid First Name');
+                setError(firstname, 'Provide a Valid Length First Name');
+                count=0;
+            }
+            else if( !/^[A-Za-z]+$/.test(firstname.value)){
+                setError(firstname, 'Use Letters Only');
                 count=0;
             }
             else {
@@ -53,7 +57,11 @@ firstNextBtn.addEventListener('click',()=> {
                 count=0;
             } 
             else if (lastname.value.trim().length < 3 || lastname.value.trim().length > 15) {
-                setError(lastname, 'Provide a valid First Name');
+                setError(lastname, 'Provide a valid Last Name');
+                count=0;
+            }
+            else if( !/^[A-Za-z]+$/.test(lastname.value)){
+                setError(lastname, 'Use Letters Only');
                 count=0;
             }
             else {
@@ -91,9 +99,14 @@ firstNextBtn.addEventListener('click',()=> {
                 count=0;
             } 
             else if (phoneNumber.value.length !== 10) {
-                setError(phoneNumber, 'Provide a valid Phone Number');
+                setError(phoneNumber, 'Provide a valid length Phone Number');
                 count=0;
-            }else {
+            }
+            else if( !/^[0-9]+$/.test(phoneNumber.value)){
+                setError(phoneNumber, 'Provide a Valid Phone Number');
+                count=0;
+            }
+            else {
                 setSuccess(phoneNumber);
                 count++;
             }
@@ -106,7 +119,12 @@ firstNextBtn.addEventListener('click',()=> {
             } else if (password.value.length < 8 ) {
                 setError(password, 'Password must be at least 8 characters');
                 count=0;
-            } else {
+            }else if(!/[A-Z]/.test(password.value)){
+                setError(password, 'Password must be at least Contain 1 Uppercase Character');
+                count=0;
+            }
+            
+            else {
                 setSuccess(password);
                 count++;
             }

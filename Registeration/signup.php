@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"]=="POST")
     // $row = mysqli_fetch_row($select);
     // $count = $row[0];
     if(mysqli_num_rows($select)>0){
-    $_SESSION['Status']='These User has already been Registered';
+    $_SESSION['Status']='Email has already been Registered ';
       header("Location: practice.php");
     }
     else
