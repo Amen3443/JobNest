@@ -48,6 +48,7 @@ test('Invalid Registeration', async function InvalidRegisteration({browser}) {
  
   await page.waitForTimeout(2000);
 
+  await page.keyboard.press("Backspace");
 
   await page.getByRole('textbox', { name: 'First Name' }).fill('Am');
 

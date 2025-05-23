@@ -94,6 +94,6 @@ test('Valid Registeration', async function validRegisteration({browser}) {
 
 
 
-
-
+////SQL injection
+////ad male female 
 //npx playwright codegen https://localhost/JobNest/Project/Job%20Vaccancies/Registeration/practice.php --viewport-size "1920, 1200" --ignore-https-errors

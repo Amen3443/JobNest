@@ -1,5 +1,7 @@
 const {test,expect}=require("@playwright/test")
 
+const testdata=JSON.parse(JSON.stringify(require("../testdata.json")))
+
 test('Valid normal Login', async function validNormalLogin({browser}) {
     // To make playwright ignore https
   const context = await browser.newContext({ ignoreHTTPSErrors: true });
@@ -19,15 +21,15 @@ test('Valid normal Login', async function validNormalLogin({browser}) {
   await page.waitForSelector("input[placeholder='Enter Email']");
 
   //Proceed with filling out the form
-  await page.getByPlaceholder("Enter Email").type("Mesfin@gmail.com");
-  await page.locator("input[name='Password']").type("Amen12345");
+  await page.getByPlaceholder("Enter Email").fill(testdata.email);
+  await page.locator("input[name='Password']").fill(testdata.password);
   await page.locator("#abebe").click();
 
   // Profile picture visable
   await expect(profileLink).toBeVisible();
 
   //Wait Time
-  await page.waitForTimeout(5000);
+  // await page.waitForTimeout(5000);
 
   
   //Commands
@@ -54,11 +56,13 @@ test('Valid Admin Login', async ({ browser }) => {
   await page.waitForSelector("input[placeholder='Enter Email']");
 
   //Proceed with filling out the form
-  await page.getByPlaceholder("Enter Email").type("admin");
-  await page.locator("input[name='Password']").type("admin");
+  await page.getByPlaceholder("Enter Email").fill(testdata.Aemail);
+  await page.locator("input[name='Password']").fill(testdata.Apassword);
   await page.locator("#abebe").click();
 
-  await expect(page).toHaveURL(/Admin/)  
+  await expect(page).toHaveURL(/Admin/) ;
+  
+   await expect(profileLink).toBeVisible(); 
 
   await page.waitForTimeout(5000);
 
@@ -70,7 +74,7 @@ test('Valid Admin Login', async ({ browser }) => {
 
 });
 
-test.only('Invalid Login', async ({ browser }) => {
+test('Invalid Login', async ({ browser }) => {
     // To make playwright ignore https
   const context = await browser.newContext({ ignoreHTTPSErrors: true });
   const page = await context.newPage();
@@ -84,8 +88,8 @@ test.only('Invalid Login', async ({ browser }) => {
   await page.waitForSelector("input[placeholder='Enter Email']");
 
   //Proceed with filling out the form incorrectly
-  await page.getByPlaceholder("Enter Email").type("awef",{delay:200});
-  await page.locator("input[name='Password']").type("aaefwe");
+  await page.getByPlaceholder("Enter Email").fill(testdata.Inemail,{delay:200});
+  await page.locator("input[name='Password']").fill(testdata.password);
   
   //click login
   await page.locator("#abebe").click();
@@ -105,5 +109,8 @@ test.only('Invalid Login', async ({ browser }) => {
 
 
 });
+
+
+////SQL injection
 
 

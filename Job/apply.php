@@ -8,6 +8,7 @@ if ($_SERVER["REQUEST_METHOD"]=="POST") {
         $id= $_POST['job_id'];
         $user_id= $_SESSION['User_Id'];
         $level= $_POST['level'];
+      //  $Type=$_POST[]
         $apply=$_POST['apply'];
         $ver="SELECT COUNT(*) FROM applied_jobs WHERE Job_Id = $id AND U_Id = $user_id ;";
         $result = $SqlConnection->query($ver);
@@ -22,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"]=="POST") {
         }
 
 
-       if ($level=="Senior Level") 
+       if ($level=="Senior Level") // add type
        {
             if($_SESSION['experienceLevel']=='Senior Level'){
                 $sql="INSERT INTO applied_jobs(Job_Id,U_Id,Status) VALUES ($id, $user_id,'Pending');";
@@ -98,4 +99,6 @@ if ($_SERVER["REQUEST_METHOD"]=="POST") {
 
 }
 
+
+//Add type with every filter 
 ?>

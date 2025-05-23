@@ -99,3 +99,5 @@ await page.getByRole('button', { name: 'Recommended Jobs' }).click();
    await page.waitForTimeout(4000);
 
 })
+
+///update email that already exists 
