@@ -1,7 +1,7 @@
 const { expect } = require('@playwright/test');
 
 async function performLogin(browser,name,password) {
-const context = await browser.newContext({ ignoreHTTPSErrors: true });
+ const context = await browser.newContext({ ignoreHTTPSErrors: true });
 const page = await context.newPage();
 
   await page.goto("https://localhost/JobNest/Project/Job%20Vaccancies/Job/Job.php");

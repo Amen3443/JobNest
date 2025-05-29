@@ -21,28 +21,23 @@ test('Valid normal Login', async function validNormalLogin({browser}) {
   await page.waitForSelector("input[placeholder='Enter Email']");
 
   //Proceed with filling out the form
-  await page.getByPlaceholder("Enter Email").fill(testdata.email);
-  await page.locator("input[name='Password']").fill(testdata.password);
+  await page.getByPlaceholder("Enter Email").fill(testdata[0].email);
+  await page.locator("input[name='Password']").fill(testdata[0].password);
   await page.locator("#abebe").click();
 
+ //await page.screenshot({path: "tests/Screenshots/Valid normal Login.png"})
   // Profile picture visable
   await expect(profileLink).toBeVisible();
 
   //Wait Time
-  // await page.waitForTimeout(5000);
+   await page.waitForTimeout(2000);
 
   
-  //Commands
- // npx playwright show-report - to see the report
- // npx playwright test ./tests/login.spec.js - to autmate the test
-// npx playwright test ./tests/login.spec.js --headed - same but with display
-//npx playwright codegen --viewport-size "1920, 1200"
-module.exports = { validNormalLogin };
 });
 
 
 
-test('Valid Admin Login', async ({ browser }) => {
+test.only('Valid Admin Login', async ({ browser }) => {
     // To make playwright ignore https
   const context = await browser.newContext({ ignoreHTTPSErrors: true });
   const page = await context.newPage();
@@ -56,20 +51,14 @@ test('Valid Admin Login', async ({ browser }) => {
   await page.waitForSelector("input[placeholder='Enter Email']");
 
   //Proceed with filling out the form
-  await page.getByPlaceholder("Enter Email").fill(testdata.Aemail);
-  await page.locator("input[name='Password']").fill(testdata.Apassword);
+  await page.getByPlaceholder("Enter Email").fill(testdata[0].Aemail);
+  await page.locator("input[name='Password']").fill(testdata[0].Apassword);
   await page.locator("#abebe").click();
-
+  //To have /Admin URL
   await expect(page).toHaveURL(/Admin/) ;
+
   
-   await expect(profileLink).toBeVisible(); 
-
-  await page.waitForTimeout(5000);
-
-  //Commands
- // npx playwright show-report - to see the report
- // npx playwright test ./tests/login.spec.js - to autmate the test
-// npx playwright test ./tests/login.spec.js --headed - same but with display
+  await page.waitForTimeout(2000);
 
 
 });
@@ -88,8 +77,8 @@ test('Invalid Login', async ({ browser }) => {
   await page.waitForSelector("input[placeholder='Enter Email']");
 
   //Proceed with filling out the form incorrectly
-  await page.getByPlaceholder("Enter Email").fill(testdata.Inemail,{delay:200});
-  await page.locator("input[name='Password']").fill(testdata.password);
+  await page.getByPlaceholder("Enter Email").fill(testdata[0].Inemail,{delay:200});
+  await page.locator("input[name='Password']").fill(testdata[0].password);
   
   //click login
   await page.locator("#abebe").click();
@@ -98,9 +87,11 @@ test('Invalid Login', async ({ browser }) => {
   const errorMessage = page.locator('span.status', { hasText: 'Your Email or Password is Incorrect' });
   await expect(errorMessage).toBeVisible(); 
 
-  await page.screenshot({path: "tests/Screenshots/InvalidErrormsg.png"})
 
-  await page.waitForTimeout(5000);
+  await page.waitForTimeout(2000);
+
+
+});
 
   //Commands
  // npx playwright show-report - to see the report
@@ -108,9 +99,7 @@ test('Invalid Login', async ({ browser }) => {
 // npx playwright test ./tests/login.spec.js --headed - same but with display
 
 
-});
 
 
-////SQL injection
 
 

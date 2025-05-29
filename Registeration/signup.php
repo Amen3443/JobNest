@@ -104,6 +104,7 @@ if ($_SERVER["REQUEST_METHOD"]=="POST")
             $_SESSION['phoneNumber']=$phoneNumber;
             $_SESSION['experienceLevel']=$Experience;
             $_SESSION['location']=$location;
+             $_SESSION['role'] = 'User';
             $_SESSION['pp']= 'profile.png';
            
             header("Location: ../Profilepage/Profile.php");
@@ -156,6 +157,7 @@ if ($_SERVER["REQUEST_METHOD"]=="POST")
             $_SESSION['phoneNumber']=$phoneNumber;
             $_SESSION['experienceLevel']=$Experience;
             $_SESSION['location']=$location;
+            $_SESSION['role'] = 'User';
             $_SESSION['pp']= 'profile.png';
            
 

@@ -29,7 +29,9 @@ $sql = "SELECT * FROM user_db WHERE email='$Email' AND password='$Password'";
                     $_SESSION['experienceLevel']=$row['experienceLevel'];
                     $_SESSION['location']=$row['location'];
                     $_SESSION['pp']=$row['profilePicture'];
+                    $_SESSION['role'] = 'User';
                     if ($row['email']=='admin'&& $row['password']=='admin') {
+                        $_SESSION['role']='Admin';
                         header("Location:../Admin/admin.php");
                     }else {
                         header("Location:".$url); 

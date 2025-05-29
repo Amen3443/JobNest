@@ -1,4 +1,6 @@
-{
+[
+    {
+    "Comment":"Login info",
     "email":"Amen@gmail.com",
     "password":"Amen12345",
 
@@ -7,6 +9,133 @@
 
     "Inemail":"asdkjh@gmail.com",
     "Inpassword":"asnwoneodn"
+    },
+    
+    {
+    "Comment":"Apply info",
+    "Aemail":"mezid@gmail.com",
+    "Apassword":"Mezid12345"
+    
+    },
 
 
-}
+    {
+    "Comment":"Filter info",
+   
+  "ExperienceLevel": [
+    "Any Experience Level",
+    "No Experience",
+    "Internship & Graduate",
+    "Entry Level",
+    "Mid Level",
+    "Senior Level"
+  ],
+  "Type": [
+    "Any Type",
+    "Full Time",
+    "Part Time",
+    "Internship"
+  ],
+  "JobFunctions": [
+    "All Functions",
+    "Business and Administration",
+    "Banking and Insurance",
+    "Const and Architecture",
+    "Education",
+    "Engineering",
+    "Finance",
+    "Human Resources",
+    "IT & Telecom",
+    "Law",
+    "Management",
+    "Sales and Marketing",
+    "Telemarketing"
+  ]
+},
+
+{
+    "Remail":"David@gmail.com",
+    "Rpassword":"David12345"
+},
+
+{
+  "comment":"Registeration info",
+  "user1":[
+  "Selam@gmail3.com",
+  "Selam12345",
+ 
+  "Selam",
+  "Belete" ,
+  "2003-12-22",
+  "Addis Ababa",
+  "0911044786",
+  "profile/john.jpg",
+  "Female"
+  ],
+
+  "user2": [
+  "Selemon@gmail1.com",
+  "Selemon12345",
+  "Selemon",
+  "Basha" ,
+  "2006-12-22",
+  "Bahir Dar",
+  "0911044786",
+  "profile/john.jpg",
+  "male"
+
+
+  ]
+
+},
+
+{
+  "comment":"Update info",
+  "Update1":[ 
+  "Yared",
+  "Simon" ,
+  "Yared@gmail.com",
+  "2006-12-19",
+  "Female",
+  "0911044786",
+  "IT & Telecom",
+  "Senior Level",
+  "Full Time",
+  "Yared12345",
+  "Addis Ababa",
+  "profile/john.jpg"
+  
+  ],
+
+  "Update2": [
+  "Misikir",
+  "Markos" ,
+  "markos@gmail.com",
+  "1990-09-12",
+  "Female",
+  "0911692217",
+  "Business and Administration",
+  "Entry Level",
+  "Part Time",
+  "Mise85213",
+  "USA",
+  "profile/mezid.jpg"
+
+
+  ]
+
+},
+    
+    {
+    "Comment":"Delete info",
+    "Aemail":"mezid@gmail.com",
+    "Apassword":"Mezid12345"
+    
+    }
+           
+
+    
+    
+
+]
+

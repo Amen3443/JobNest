@@ -87,6 +87,7 @@ if ($_SERVER["REQUEST_METHOD"]=="POST")
             $_SESSION['experienceLevel']=$Experience;
             $_SESSION['location']=$location;
             $_SESSION['pp']=$newpic;
+            $_SESSION['role'] = 'User';
             $_SESSION['Status']='You have Successfully Updated Your Profile';
             header("Location: ../Profilepage/profile.php");
             exit();
@@ -124,6 +125,7 @@ if ($_SERVER["REQUEST_METHOD"]=="POST")
             $_SESSION['phoneNumber']=$phoneNumber;
             $_SESSION['experienceLevel']=$Experience;
             $_SESSION['location']=$location;
+            $_SESSION['role'] = 'User';
             $_SESSION['Status']='You have Successfully Updated Your Profile';
            
 

@@ -276,7 +276,7 @@ include "Companyfilter.php";
                             <input type="checkbox" id="check" value="Management" name='box[]'><span id="fun">Management</span> <br>
                             <input type="checkbox" id="check" value="Sales and Marketing" name='box[]'><span id="fun">Sales & Marketing</span> <br>
                             <input type="checkbox" id="check" value="Telemarketing" name='box[]'><span id="fun">Telemarketing</span><br>
-                            <!-- <input type="checkbox">Law<br> -->
+                           
                             <button type="submit" id="reset">Apply Filters</button>
                            
                         </form>

@@ -3,6 +3,11 @@ session_start();
 require_once "../Connection/Connection.php";
 include "../Job/Jobfilters.php";
 
+if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'Admin'|| $_SESSION['Username'] ) {
+    $_SESSION['Status']="Unauthorized Access";
+    header("Location:../Home/Home.php");
+    exit();
+}
 ?>
 
 <html lang="en">

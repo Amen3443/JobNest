@@ -47,17 +47,20 @@ export default defineConfig({
       
     // },
     {
-      name:'Google Chrome',
+      name: 'Google Chrome',
       use: {
         channel: 'chrome',
         ...devices['Desktop Chrome'],
-      viewport: null,
-      launchOptions: {
-          args: ['--start-maximized'],// Start maximized
-          slowMo: 500 //Every step half a second slower
-        
-      },
-      deviceScaleFactor: undefined },
+        viewport: null,
+      video:"on", // ✅ enable video recording
+      screenshot:"on",
+        launchOptions: {
+          args: ['--start-maximized'],
+          slowMo: 500,
+        },
+        deviceScaleFactor: undefined,
+      }
+      
     }
 
     // {
@@ -90,6 +93,7 @@ export default defineConfig({
     //   use: { ...devices['Desktop Chrome'], channel: 'chrome' },
     // },
   ],
+ // outputDir: 'tests/Screenshots',
 
   /* Run your local dev server before starting the tests */
   // webServer: {

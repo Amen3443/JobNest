@@ -2,6 +2,12 @@
 session_start();
 require_once "../Connection/Connection.php";
 include 'recommended.php';
+
+if (!isset($_SESSION['Username']) || $_SESSION['role'] !== 'User') {
+    $_SESSION['Status']="Unauthorized Access";
+    header("Location: ../Home/Home.php");
+    exit();
+}
 ?>
 
 
